@@ -1,0 +1,148 @@
+@import '../styles/variables.scss';
+
+.header__nav {
+  background-color: $white;
+  -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+  -moz-box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+  box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+  text-transform: uppercase;
+  font-weight: $bold;
+  padding: 0 12px;
+
+  a {
+    color: $grey-200;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      padding: 12px 0;
+    }
+  }
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: $bold;
+  color: $grey-300;
+  text-transform: uppercase;
+  padding: 0 12px;
+}
+
+.products {
+  padding: 12px 12px;
+
+  .products__box {
+    margin: 12px 0;
+    padding: 12px 12px;
+    background-color: $white;
+    -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+    -moz-box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+    box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+    border-radius: 3px;
+  }
+
+  .box {
+    display: flex;
+    border: 1px solid $grey-100;
+    border-radius: 3px;
+    padding: 12px 12px;
+    margin: 12px 0;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    .box__image {
+      align-self: flex-end;
+    }
+
+    .box__description {
+      p {
+        padding: 0 0 12px 12px;
+      }
+
+      .box__title {
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      .box__price {
+        text-align: right;
+        font-weight: $bold;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .price__box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $grey-200;
+    border-radius: 3px;
+    padding: 12px 12px;
+    margin: 12px 0;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      padding: 6px 0;
+
+      &:first-child {
+        padding: 0 0 6px 0;
+      }
+  
+      &:last-child {
+        padding: 12px 0 0 0;
+      }
+    }
+
+    .price__discount {
+      color: $orange-100;
+    }
+
+    .price__total {
+      font-weight: $bold;
+    }
+  }
+}
+
+.default__button {
+  padding: 16px;
+  margin: 12px 0;
+  background-color: $orange-100;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $white;
+  font-size: 20px;
+  font-weight: $bold;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -3px 0 0 #D45A00, 0 2px 4px 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 -3px 0 0 #D45A00, 0 2px 4px 0 rgba(0,0,0,0.25);
+  box-shadow: inset 0 -3px 0 0 #D45A00, 0 2px 4px 0 rgba(0,0,0,0.25);
+  transition: all 0.1s;
+
+  &:hover {
+    margin: 15px 0;
+    -webkit-box-shadow: inset 0 0 0 0 #D45A00, 0 0 0 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 0 0 0 #D45A00, 0 0 0 0 rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 0 0 #D45A00, 0 0 0 0 rgba(0,0,0,0.25);
+  }
+}
